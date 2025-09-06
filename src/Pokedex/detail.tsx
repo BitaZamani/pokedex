@@ -3,11 +3,13 @@ import Bar from "../UI/bar";
 import { findColor } from "../utils/helpers/findColor";
 import { Abilities, Stats, Types } from "../types/types";
 import Loader from "../UI/loader/loader";
+import Error from "../UI/error";
 
 const Detail = () => {
-  const { detail, loading } = useFetchDetails();
+  const { detail, loading, error } = useFetchDetails();
 
   if (loading) return <Loader />;
+  if (error) return <Error msg={error} />;
   if (detail) {
     return (
       <div
