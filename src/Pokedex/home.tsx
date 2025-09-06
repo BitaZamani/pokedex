@@ -21,7 +21,7 @@ const Home = () => {
     <div className="min-h-screen">
       <section className="bg-yellow-200 rounded-b-4xl h-[150px] sm:h-[200px]">
         <div className="flex justify-center items-center">
-          <img src="src/assets/Pokedex.png" className="w-72" />
+          <img src="public/Pokedex.png" className="w-72" />
         </div>
         <div className="relative w-5/6 max-w-[400px] mx-auto">
           <input
